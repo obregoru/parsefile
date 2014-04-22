@@ -1,0 +1,16 @@
+<h1>Editing parsefile</h1>
+
+<% form_for(@parsefile) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :filename %><br />
+    <%= f.text_field :filename %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @parsefile %> |
+<%= link_to 'Back', parsefiles_path %>

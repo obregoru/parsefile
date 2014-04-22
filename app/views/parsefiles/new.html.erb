@@ -1,0 +1,15 @@
+<h1>New parsefile</h1>
+
+<% form_for(@parsefile) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :filename %><br />
+    <%= f.text_field :filename %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', parsefiles_path %>
